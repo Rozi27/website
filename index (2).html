@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIOBE Index - Ringkasan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background-color: #e0f7fa;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar button {
+            margin: 0 5px;
+            padding: 10px;
+            border: none;
+            background-color: #00bcd4;
+            color: white;
+            cursor: pointer;
+        }
+        .search-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search-container input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .tag-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .tag-filters span {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 1 1 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <h1>TIOBE Programming Language Index</h1>
+            <p class="tagline">Ringkasan, metodologi, manfaat, dan daftar 30 bahasa pemrograman</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div>
+            <button>Semua</button>
+            <button>Top 10</button>
+            <button>Trending</button>
+            <button>Pendatang Baru</button>
+        </div>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Cari bahasa pemrograman...">
+    </div>
+
+    <div class="tag-filters">
+        <span>Python</span>
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>C++</span>
+        <!-- Add more tags as needed -->
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-card">
+            <h3>Most Popular</h3>
+            <p>Python</p>
+        </div>
+        <div class="stat-card">
+            <h3>Mean</h3>
+            <p>75</p>
+        </div>
+        <div class="stat-card">
+            <h3>Mode</h3>
+            <p>Python</p>
+        </div>
+        <div class="stat-card">
+            <h3>Median</h3>
+            <p>70</p>
+        </div>
+        <div class="stat-card">
+            <h3>Standar Deviasi</h3>
+            <p>15</p>
+        </div>
+        <div class="stat-card">
+            <h3>Total Languages</h3>
+            <p>30</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="card">
+            <h2>Pendahuluan</h2>
+            <p>
+                Halaman ini menampilkan ringkasan tentang TIOBE Index dan daftar 30 bahasa pemrograman teratas. 
+                Data diambil dari publikasi TIOBE yang memantau popularitas bahasa pemrograman secara berkala.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Tentang TIOBE</h2>
+            <p>
+                TIOBE adalah sebuah perusahaan yang menerbitkan indeks popularitas bahasa pemrograman (TIOBE Index).
+                Indeks ini sering digunakan sebagai indikator umum tren penggunaan bahasa pemrograman di dunia.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Metode Pengumpulan Data</h2>
+            <p>
+                TIOBE mengumpulkan data dari berbagai sumber publik seperti mesin pencari, situs pekerjaan, forum, dan materi pembelajaran.
+                Mereka menghitung frekuensi pencarian dan indikasi penggunaan untuk mengestimasi popularitas setiap bahasa.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Manfaat</h2>
+            <ul>
+                <li>Membantu pengembang dan perusahaan memilih bahasa untuk proyek baru.</li>
+                <li>Memberikan wawasan tren panjang dan perubahan popularitas dari waktu ke waktu.</li>
+                <li>Menjadi referensi untuk keputusan pelatihan dan perekrutan.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
